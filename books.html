@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books</title>
+</head>
+
+<body>
+    <p>
+        <table border="1">
+            
+            <h3>책을 선물해드립니다</h3>
+            <h3>받을 사람 개인정보 입력</h3>
+            <p>
+                <label for="username">Name: </label>
+                <input type="text" id="username">
+            </p>
+            <p>
+                <label for="mail">Mail: </label>
+                <input type="email" id="mail">
+            </p>
+            <p>
+                <label for="phone">PhoneNum: </label>
+                <input type="tel" id="phone">
+            </p>
+            <p>
+                <label for="homepage">Blog/Homepage: </label>
+                <input type="url" id="homepage">
+            </p>
+            <p>
+                <label><input type="radio" name = "gender" value="male">
+                남자</label><br>
+                <label><input type="radio" name = "gender" value="female">
+                여자</label>
+            </p>
+            <p>
+                <form action="https://localhost/login.php" method="post">
+                    주문 확인을 위한 아이디와 패스워드 저장<br>
+                    <label for="username">아이디:</label>
+                    <input id="username" type="text" name="usr"><br>
+                    <label for="password">패스워드:</label>
+                    <input id="password" type="text" name="pwd"><br>
+                    <input type="submit" value="확인">
+                </form>
+            </p>
+    </p>
+            <h4>동전 및 지폐 수</h4>
+            100Won: <input type="range" min="0" max="9" value="0">
+            <br>1000Won: <input type="range" min="0" max="9" value="0">
+            <br>10000Won: <input type="range" min="0" max="9" value="0">
+            <!--데이터 입력해서 저장하는 버튼으로 바꾸기-->
+            <br><input type="submit" value="입력">
+            <caption>관련 책 종류</caption>
+            <colgroup>
+                <col with="100px" span="1" style="background-color: olivedrab;">
+                <col with="250px" style="background-color: yellowgreen;">
+                <col width="200px" style="background-color: yellow;">
+                <div><col width="200px" style="background-color: silver;">
+            </div>
+                
+            </colgroup>
+            <tr>
+                <tr>
+                    <th>책 이름</th>
+                    <th>저자</th>
+                    <th>ISBN</th>
+                    <th>구매 여부</th>
+                </tr>
+                <tr>
+                    <td>파인만, 과학을 웃겨주세요</td>
+                    <td>김성화, 권수진</td>
+                    <td>9788964960479</td>
+                    <td><label><input type="checkbox" name="choose" value="book1"></label></td>
+                </tr>
+                <tr>
+                    <td>로봇 다빈치, 꿈을 설계하다</td>
+                    <td>데니스홍(홍원서)</td>
+                    <td>9788946418370</td>
+                    <td><label><input type="checkbox" name="choose" value="book2"></label></td>
+                </tr>
+            </tr>
+        </table>
+        <input type="search">
+        <input type="submit" value="검색">
+        <br> 책 권수: <input type="number" min="1" max="99" value="1">권
+        <!--데이터 입력해서 저장하는 버튼으로 바꾸기-->
+        <br><input type="submit" value="보내기">
+        <p>
+            책을 수령할 날짜를 고르세요<br>
+            <label><input type="datetime-local" value="2024-04-01T09:00" id="start"></label>~
+            <label><input type="datetime-local" value="2025-04-01T09:00" id="end"></label>
+        </p>
+    </p>
+</body>
+
+</html>
